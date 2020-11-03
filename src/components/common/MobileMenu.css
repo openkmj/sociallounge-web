@@ -1,0 +1,21 @@
+@media screen and (min-width: 1024px) {
+  .sl-m-header-container {
+    display: none;
+  }
+}
+.sl-m-header-container {
+  border-bottom: 1px solid #dcdcdc;
+}
+.sl-m-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 77px;
+  padding: 0 21px;
+}
+.sl-m-header-menu-button {
+}
+.sl-m-header-logo {
+}
+.sl-m-header-my {
+}

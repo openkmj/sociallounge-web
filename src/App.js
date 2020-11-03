@@ -13,9 +13,14 @@ import FaqPage from "./pages/FaqPage";
 import TermsPage from "./pages/TermsPage";
 import PrivacyPage from "./pages/PrivacyPage";
 
+import Menu from "./components/common/Menu";
+import MobileMenu from "./components/common/MobileMenu";
+
 function App() {
   return (
     <div>
+      <Menu />
+      <MobileMenu />
       <Switch>
         <Route path="/" component={MainPage} exact />
         <Route path="/login" component={LoginPage} />

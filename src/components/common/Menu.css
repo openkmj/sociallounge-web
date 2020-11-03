@@ -1,0 +1,35 @@
+@media screen and (max-width: 1023px) {
+  .sl-header-container {
+    display: none;
+  }
+}
+.sl-header-container {
+  border-bottom: 1px solid #dcdcdc;
+}
+.sl-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 154px;
+  padding: 0 20px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.sl-header-menu {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #5c5c5c;
+  width: 444px;
+}
+.sl-header-my {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #707070;
+  width: 140px;
+}
