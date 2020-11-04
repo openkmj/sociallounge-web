@@ -1,0 +1,36 @@
+.sl-poicy-container {
+}
+.sl-policy-wrapper {
+  max-width: 1200px;
+  padding: 0 5vw;
+  margin: 0 auto;
+}
+.sl-policy-title-head {
+  margin-left: 10px;
+  margin-top: 110px;
+  height: 5px;
+  width: 38px;
+  background-color: #002c67;
+}
+.sl-policy-title {
+  margin-left: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.48;
+  color: #4e4e4e;
+}
+.sl-policy-content {
+  margin: 50px 0 200px;
+}
+.sl-policy-section {
+  margin-bottom: 20px;
+}
+.sl-policy-subtitle {
+  color: #002c67;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.sl-policy-text {
+  color: #707070;
+  font-size: 16px;
+}
