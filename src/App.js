@@ -15,6 +15,7 @@ import PrivacyPage from "./pages/PrivacyPage";
 
 import Menu from "./components/common/Menu";
 import MobileMenu from "./components/common/MobileMenu";
+import Footer from "./components/common/Footer/Footer";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path="/privacy" component={PrivacyPage} />
         <Redirect path="*" to="/" />
       </Switch>
+      <Footer />
     </div>
   );
 }
