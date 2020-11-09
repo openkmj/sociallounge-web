@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 154px;
+  height: 100px;
   padding: 0 20px;
   max-width: 1280px;
   margin: 0 auto;
@@ -18,7 +18,7 @@
 .sl-header-menu {
   display: flex;
   justify-content: space-between;
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 300;
   line-height: 1.5;
   color: #5c5c5c;
