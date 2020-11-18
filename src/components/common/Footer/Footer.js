@@ -12,7 +12,7 @@ function Footer() {
                 <ul className="sl-footer-policy">
                     <li><Link to="/terms">이용약관</Link></li>
                     <li><Link to="/privacy">개인정보처리방침</Link></li>
-                    <li>사업자정보확인</li>
+                    <li><a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=2193071066" target="_blank" rel="noreferrer">사업자정보확인</a></li>
                 </ul>
             </div>
             <div className="sl-footer-bottom">
@@ -23,12 +23,12 @@ function Footer() {
                 </ul>
                 <div className="sl-footer-contact">
                     <span>Contact</span>
-                    tel : 010-3588-9084 | e-mail : satpary73@gmail.com | 카카오톡 채널
+                    tel : 010-3588-9084 | e-mail : satpary73@gmail.com | <a href="https://pf.kakao.com/_TxbPQxb" target="_blank" rel="noreferrer">카카오톡 채널</a>
                 </div>
                 <div className="sl-footer-sns">
-                    <img src="img/icon/ic-instargram.png" alt="인스타"></img>
-                    <img src="img/icon/ic-facebook.png" alt="페북"></img>
-                    <img src="img/icon/ic-blog.png" alt="블로그"></img>
+                    <img src="img/icon/ic-instargram.png" alt="인스타" onClick={()=>{window.open('https://www.instagram.com/sociallounge_official/')}}></img>
+                    <img src="img/icon/ic-facebook.png" alt="페북" onClick={()=>{window.open('https://www.facebook.com/sociallounge.official')}}></img>
+                    <img src="img/icon/ic-blog.png" alt="블로그" onClick={()=>{window.open('https://blog.naver.com/proteamblog')}}></img>
                 </div>
             </div>
         </div>

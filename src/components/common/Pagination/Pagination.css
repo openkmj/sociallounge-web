@@ -1,0 +1,25 @@
+.pagination-container {
+  margin: 0 auto;
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+}
+.pagination-side-buttion {
+  background-color: #ffffff;
+  border: solid 1px #707070;
+  cursor: pointer;
+}
+.pagination-page-button {
+  font-size: 19px;
+  font-weight: 300;
+  background-color: #ffffff;
+  color: #707070;
+  border: none;
+  padding: 6px 11.8px;
+  cursor: pointer;
+}
+.pagination-page-button.active {
+  color: #ffffff;
+  background-color: #002c67;
+  border-radius: 8px;
+}

@@ -15,7 +15,16 @@ function Menu() {
                 <li><Link to="/" >홈</Link></li>
                 <li><Link to="/moim" >모임</Link></li>
                 <li><Link to="/magazine" >매거진</Link></li>
-                <li><div>고객지원</div></li>
+                <li>
+                  <div className="sl-sub-menu-open"><Link to="/notice">고객지원</Link></div>
+                  <div className="sl-sub-menu">
+                    <ul>
+                      <li><Link to="/notice" >공지사항</Link></li>
+                      <li><Link to="/faq" >FAQ</Link></li>
+                      <li><a href="http://pf.kakao.com/_TxbPQxb/chat">1대1 문의</a></li>
+                    </ul>
+                  </div>
+                </li>
             </ul>
             <div className="sl-header-my">
                 <div><Link to="/login" >로그인</Link></div>

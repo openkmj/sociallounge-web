@@ -1,5 +1,7 @@
 import './App.css';
 import { Route, Switch, Redirect } from "react-router-dom";
+import React from "react";
+import axios from "axios";
 import MainPage from "./pages/MainPage";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
@@ -13,11 +15,20 @@ import FaqPage from "./pages/FaqPage";
 import TermsPage from "./pages/TermsPage";
 import PrivacyPage from "./pages/PrivacyPage";
 
-import Menu from "./components/common/Menu";
-import MobileMenu from "./components/common/MobileMenu";
+import Menu from "./components/common/Menu/Menu";
+import MobileMenu from "./components/common/MobileMenu/MobileMenu";
 import Footer from "./components/common/Footer/Footer";
+import MobileFooter from './components/common/MobileFooter/MobileFooter';
+
 
 function App() {
+  React.useEffect(()=>{
+    axios.get('/auth/name').then((result)=>{
+      console.log(result.data);
+    }).catch(err=>{
+      console.log(err);
+    });
+  },[])
   return (
     <div>
       <Menu />
@@ -38,6 +49,7 @@ function App() {
         <Redirect path="*" to="/" />
       </Switch>
       <Footer />
+      <MobileFooter/>
     </div>
   );
 }
