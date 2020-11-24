@@ -18,6 +18,12 @@ ul {
 li {
   list-style: none;
 }
+button:focus {
+  outline: 0;
+}
+button {
+  cursor: pointer;
+}
 
 @font-face {
   font-family: "Spoqa Han Sans";
