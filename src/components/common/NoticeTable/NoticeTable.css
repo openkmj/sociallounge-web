@@ -13,7 +13,8 @@
 .notice-table-item.active > .notice-table-item-title {
   border-bottom: 1px solid #c4c4c4;
 }
-.notice-table-item.active > .notice-table-item-icon {
+.notice-table-item.active .notice-table-item-title-icon {
+  background-color: #002c67;
 }
 .notice-table-item.active > .notice-table-item-desc {
   display: block;
@@ -61,6 +62,9 @@
   overflow: hidden;
 }
 .slide-down {
+  background: none;
+  border: solid 1px #dcdcdc;
+  padding: 12px 11.5px;
 }
 .notice-table-item-desc {
   background-color: #f5f5f5;
