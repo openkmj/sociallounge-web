@@ -18,7 +18,7 @@ function Pagination(props) {
         }}
         className="pagination-side-buttion"
       >
-        {"<"}
+        <img src="img/icon/ic-prev.png" alt="prev" />
       </button>
       {pages.map((item, index) => (
         <button
@@ -41,7 +41,7 @@ function Pagination(props) {
         }}
         className="pagination-side-buttion"
       >
-        {">"}
+        <img src="img/icon/ic-next.png" alt="next" />
       </button>
     </div>
   );
