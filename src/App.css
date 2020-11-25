@@ -9,6 +9,12 @@
 .notice-page-wrapper {
   padding-top: 160px;
 }
+.faq-page-wrapper {
+  padding-top: 130px;
+}
+.faq-page-tab {
+  margin: 20px 10px;
+}
 .login-page-container {
   width: 100%;
 }

@@ -1,0 +1,19 @@
+.tab-container {
+  padding: 10px 0;
+}
+.tab-list {
+  display: flex;
+  line-height: 1.2;
+}
+.tab-item {
+  font-size: 18px;
+  color: #707070;
+  cursor: pointer;
+  padding: 0 30px;
+}
+.tab-item + .tab-item {
+  border-left: solid 1px #dcdcdc;
+}
+.tab-item.active {
+  font-weight: bold;
+}

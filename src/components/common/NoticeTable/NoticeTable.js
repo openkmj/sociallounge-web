@@ -5,11 +5,13 @@ import Pagination from "../Pagination/Pagination";
 function NoticeTable(props) {
   const [active, setActive] = React.useState(-1);
   const [currentPage, setCurrentPage] = React.useState(0);
-  const totalPage = parseInt((props.data.length - 1) / 10) + 1;
-  // const totalPage = 8;
+  const [totalPage, setTotalPage] = React.useState(1);
   const [currentData, setCurrentData] = React.useState([]);
   React.useEffect(() => {
     setCurrentData(props.data.slice(0, 10));
+    setActive(-1);
+    setCurrentPage(0);
+    setTotalPage(parseInt((props.data.length - 1) / 10) + 1);
   }, [props.data]);
   const setPage = (index) => {
     if (index >= 0 && index < totalPage) {
@@ -72,9 +74,9 @@ function NoticeTable(props) {
               }}
             >
               {index === active ? (
-                <img src="img/icon/ic-up.png" />
+                <img src="img/icon/ic-up.png" alt="up" />
               ) : (
-                <img src="img/icon/ic-down.png" />
+                <img src="img/icon/ic-down.png" alt="down" />
               )}
             </button>
           </div>
