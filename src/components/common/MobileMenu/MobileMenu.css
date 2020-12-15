@@ -61,6 +61,7 @@
     cursor: pointer;
 }
 .sl-m-menu-list {
+    margin: 0;
 }
 .sl-m-menu-item {
     border-bottom: solid 1px #dcdcdc;
