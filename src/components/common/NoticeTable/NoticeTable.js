@@ -42,47 +42,51 @@ function NoticeTable(props) {
   };
   return (
     <div className="notice-table-container">
-      {currentData.map((item, index) => (
-        <div
-          key={index}
-          className={
-            index === active ? "notice-table-item active" : "notice-table-item"
-          }
-        >
-          <div className="notice-table-item-title">
-            <div className="notice-table-item-title-left">
-              {props.showDate && (
-                <div className="notice-table-item-title-date">
-                  <div className="notice-table-item-title-date-month">
-                    {item.date.slice(4, 6)}
+      <div className="notice-table">
+        {currentData.map((item, index) => (
+          <div
+            key={index}
+            className={
+              index === active
+                ? "notice-table-item active"
+                : "notice-table-item"
+            }
+          >
+            <div className="notice-table-item-title">
+              <div className="notice-table-item-title-left">
+                {props.showDate && (
+                  <div className="notice-table-item-title-date">
+                    <div className="notice-table-item-title-date-month">
+                      {item.date.slice(4, 6)}
+                    </div>
+                    <div className="notice-table-item-title-date-year">
+                      {item.date.slice(0, 4)}
+                    </div>
                   </div>
-                  <div className="notice-table-item-title-date-year">
-                    {item.date.slice(0, 4)}
-                  </div>
+                )}
+                <div className="notice-table-item-title-icon">
+                  {props.iconText}
                 </div>
-              )}
-              <div className="notice-table-item-title-icon">
-                {props.iconText}
+                <div className="notice-table-item-title-text">{item.title}</div>
               </div>
-              <div className="notice-table-item-title-text">{item.title}</div>
+              <button
+                className="slide-down"
+                onClick={() => {
+                  if (active === index) setActive(-1);
+                  else setActive(index);
+                }}
+              >
+                {index === active ? (
+                  <img src="img/icon/ic-up.png" alt="up" />
+                ) : (
+                  <img src="img/icon/ic-down.png" alt="down" />
+                )}
+              </button>
             </div>
-            <button
-              className="slide-down"
-              onClick={() => {
-                if (active === index) setActive(-1);
-                else setActive(index);
-              }}
-            >
-              {index === active ? (
-                <img src="img/icon/ic-up.png" alt="up" />
-              ) : (
-                <img src="img/icon/ic-down.png" alt="down" />
-              )}
-            </button>
+            <div className="notice-table-item-desc">{item.desc}</div>
           </div>
-          <div className="notice-table-item-desc">{item.desc}</div>
-        </div>
-      ))}
+        ))}
+      </div>
       <div className="notice-table-pagination">
         <Pagination
           totalPage={totalPage}

@@ -97,7 +97,23 @@ function MobileMenu() {
                 setSubMenuOpen(!subMenuOpen);
               }}
             >
-              고객지원
+              <div
+                className={
+                  subMenuOpen
+                    ? "sl-m-menu-sub-open active"
+                    : "sl-m-menu-sub-open"
+                }
+              >
+                <span>고객지원</span>
+                <img
+                  src={
+                    subMenuOpen
+                      ? "img/icon/ic-minus.png"
+                      : "img/icon/ic-plus.png"
+                  }
+                  alt="more"
+                />
+              </div>
             </li>
             <ul
               className={

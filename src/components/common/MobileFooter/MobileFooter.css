@@ -36,6 +36,9 @@
 .sl-m-footer-policy {
   margin-bottom: 24px;
 }
+.sl-m-footer-policy a {
+  display: inline;
+}
 .sl-m-footer-sns {
   display: flex;
   width: 120px;
