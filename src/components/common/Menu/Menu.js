@@ -1,7 +1,7 @@
 import "./Menu.css";
 import { Link, withRouter } from "react-router-dom";
 
-function Menu() {
+function Menu(props) {
     return (
         <div className="sl-header-container">
             <div className="sl-header-wrapper">
@@ -12,10 +12,10 @@ function Menu() {
                     </a>
                 </div>
                 <ul className="sl-header-menu">
-                    <li>
+                    <li className={props.location.pathname === "/" ? "active" : ""}>
                         <Link to="/">홈</Link>
                     </li>
-                    <li>
+                    <li className={props.location.pathname === "/moim" ? "active" : ""}>
                         <Link to="/moim">모임</Link>
                     </li>
                     <li>
@@ -24,10 +24,10 @@ function Menu() {
                         </div>
                         <div className="sl-sub-menu">
                             <ul>
-                                <li>
+                                <li className={props.location.pathname === "/notice" ? "active" : ""}>
                                     <Link to="/notice">공지사항</Link>
                                 </li>
-                                <li>
+                                <li className={props.location.pathname === "/faq" ? "active" : ""}>
                                     <Link to="/faq">FAQ</Link>
                                 </li>
                                 <li>
@@ -40,9 +40,6 @@ function Menu() {
                 <div className="sl-header-my">
                     <div>
                         <Link to="/login">로그인</Link>
-                    </div>
-                    <div>
-                        <Link to="/signup">회원가입</Link>
                     </div>
                 </div>
             </div>

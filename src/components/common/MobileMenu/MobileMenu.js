@@ -2,7 +2,7 @@ import "./MobileMenu.css";
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 
-function MobileMenu() {
+function MobileMenu(props) {
     const [menuOpen, setMenuOpen] = React.useState(false);
     const [subMenuOpen, setSubMenuOpen] = React.useState(false);
     return (
@@ -57,7 +57,7 @@ function MobileMenu() {
                         </div>
                     </div>
                     <ul className="sl-m-menu-list">
-                        <li className="sl-m-menu-item">
+                        <li className={props.location.pathname === "/" ? "sl-m-menu-item active" : "sl-m-menu-item"}>
                             <Link
                                 to="/"
                                 onClick={() => {
@@ -67,7 +67,7 @@ function MobileMenu() {
                                 홈
                             </Link>
                         </li>
-                        <li className="sl-m-menu-item">
+                        <li className={props.location.pathname === "/moim" ? "sl-m-menu-item active" : "sl-m-menu-item"}>
                             <Link
                                 to="/moim"
                                 onClick={() => {
@@ -90,14 +90,14 @@ function MobileMenu() {
                         </li>
                         <ul className={subMenuOpen ? "sl-m-menu-sub-list active" : "sl-m-menu-sub-list"}>
                             <li
-                                className="sl-m-menu-sub-item"
+                                className={props.location.pathname === "/notice" ? "sl-m-menu-sub-item active" : "sl-m-menu-sub-item"}
                                 onClick={() => {
                                     setMenuOpen(false);
                                 }}
                             >
                                 <Link to="/notice">공지사항</Link>
                             </li>
-                            <li className="sl-m-menu-sub-item">
+                            <li className={props.location.pathname === "/faq" ? "sl-m-menu-sub-item active" : "sl-m-menu-sub-item"}>
                                 <Link
                                     to="/faq"
                                     onClick={() => {

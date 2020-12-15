@@ -1,61 +1,62 @@
 @media screen and (max-width: 1023px) {
-  .sl-header-container {
-    display: none;
-  }
+    .sl-header-container {
+        display: none;
+    }
 }
 .sl-header-container {
-  border-bottom: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
 }
 .sl-header-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100px;
-  padding: 0 20px;
-  max-width: 1280px;
-  margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 20px;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 .sl-header-menu {
-  display: flex;
-  justify-content: space-between;
-  font-size: 17px;
-  font-weight: 300;
-  line-height: 1.5;
-  color: #5c5c5c;
-  width: 444px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #5c5c5c;
+    width: 444px;
 }
-.sl-header-menu a:hover {
-  color: #002c67;
-  font-weight: normal;
+.sl-header-menu a:hover,
+.sl-header-menu .active {
+    color: #002c67;
+    font-weight: normal;
 }
 .sl-sub-menu-open {
-  position: relative;
+    position: relative;
 }
 .sl-sub-menu-open:hover + .sl-sub-menu {
-  display: block;
+    display: block;
 }
 .sl-sub-menu:hover {
-  display: block;
+    display: block;
 }
 .sl-sub-menu {
-  display: none;
-  position: absolute;
-  font-size: 16px;
-  font-weight: 300;
-  color: #5c5c5c;
-  background-color: #f5f5f5;
+    display: none;
+    position: absolute;
+    font-size: 16px;
+    font-weight: 300;
+    color: #5c5c5c;
+    background-color: #f5f5f5;
 }
 
 .sl-header-my {
-  display: flex;
-  justify-content: space-between;
-  font-size: 13px;
-  font-weight: 300;
-  line-height: 1.5;
-  color: #707070;
-  width: 105px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #707070;
+    width: 105px;
 }
 .sl-header-my a:hover {
-  color: #002c67;
-  font-weight: normal;
+    color: #002c67;
+    font-weight: normal;
 }

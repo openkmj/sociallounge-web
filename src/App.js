@@ -4,7 +4,6 @@ import React from "react";
 import axios from "axios";
 import MainPage from "./pages/MainPage";
 import LoginPage from "./pages/LoginPage";
-import SignupPage from "./pages/SignupPage";
 import MoimPage from "./pages/MoimPage";
 import MoimDetailPage from "./pages/MoimDetailPage";
 import ApplyPage from "./pages/ApplyPage";
@@ -37,7 +36,6 @@ function App() {
             <Switch>
                 <Route path="/" component={MainPage} exact />
                 <Route path="/login" component={LoginPage} />
-                <Route path="/signup" component={SignupPage} />
                 <Route path="/moim" component={MoimPage} />
                 <Route path="/moimdetail" component={MoimDetailPage} />
                 <Route path="/apply" component={ApplyPage} />
