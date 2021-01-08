@@ -2,7 +2,7 @@
   "name": "sociallounge-web",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://175.113.223.199:8000/api",
+  "proxy": "http://localhost:3000/api",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
