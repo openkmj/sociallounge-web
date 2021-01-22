@@ -1,6 +1,7 @@
 import { Link, withRouter } from "react-router-dom";
 
-function MoimDetailPage() {
+function MoimDetailPage({ match }) {
+    console.log(match.params.moimId);
     return (
         <div className="page-container">
             <div className="page-wrapper detail-page-wrapper">
@@ -91,7 +92,7 @@ function MoimDetailPage() {
                         </div>
                         <div className=""></div>
                         <div className="detail-apply-button">
-                            <Link to="/apply">"신청하기"</Link>
+                            <Link to="/apply/1">"신청하기"</Link>
                         </div>
                     </div>
                     <div className="detail-statistics-section">

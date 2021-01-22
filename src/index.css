@@ -1,52 +1,54 @@
 body {
-  margin: 0;
-  font-family: Spoqa Han Sans;
-  word-break: break-word;
+    margin: 0;
+    font-family: Spoqa Han Sans;
+    word-break: keep-all;
 }
 div {
-  margin: 0;
+    margin: 0;
 }
 a {
-  color: inherit;
-  text-decoration: none;
-  cursor: pointer;
-  display: block;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
 }
 ul {
-  list-style: none;
-  padding-inline-start: 0;
+    list-style: none;
+    padding-inline-start: 0;
 }
 li {
-  list-style: none;
+    list-style: none;
 }
 button:focus {
-  outline: 0;
+    outline: 0;
 }
 button {
-  cursor: pointer;
+    cursor: pointer;
+    text-transform: none;
+    border: none;
 }
 
 @font-face {
-  font-family: "Spoqa Han Sans";
-  src: url("font/Spoqa Han Sans Regular.woff2") format("woff2");
-  font-style: normal;
-  font-weight: normal;
+    font-family: "Spoqa Han Sans";
+    src: url("font/Spoqa Han Sans Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
 }
 @font-face {
-  font-family: "Spoqa Han Sans";
-  src: url("font/Spoqa Han Sans Light.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 300;
+    font-family: "Spoqa Han Sans";
+    src: url("font/Spoqa Han Sans Light.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 300;
 }
 @font-face {
-  font-family: "Spoqa Han Sans";
-  src: url("font/Spoqa Han Sans Thin.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 100;
+    font-family: "Spoqa Han Sans";
+    src: url("font/Spoqa Han Sans Thin.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 100;
 }
 @font-face {
-  font-family: "Spoqa Han Sans";
-  src: url("font/Spoqa Han Sans Bold.woff2") format("woff2");
-  font-style: normal;
-  font-weight: bold;
+    font-family: "Spoqa Han Sans";
+    src: url("font/Spoqa Han Sans Bold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: bold;
 }

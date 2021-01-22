@@ -1,31 +1,25 @@
 .title-section-container {
-  height: 448px;
-  background: url("/src/banner_img/notice_banner.png") no-repeat center;
-  background-size: cover;
+    height: 502px;
+    background: url("/src/banner_img/moim_banner.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.title-section-text {
-  color: #fff9f9;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.title-section {
+    color: #fff;
 }
-.title-section-sl {
-  font-size: 17px;
-  margin-bottom: 28px;
+.title-section .subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.2;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5.5px;
+    margin-bottom: 28px;
 }
-.title-section-title-wrapper {
-  display: flex;
-  align-items: center;
-}
-.title-section-title {
-  font-size: 41px;
-  margin-right: 54px;
-}
-.title-section-line {
-  height: 3px;
-  width: 125px;
-  background-color: #ffffff;
-  border: solid 1px #707070;
-  box-sizing: border-box;
+.title-section .title {
+    font-size: 41px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 31.5px;
 }

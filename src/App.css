@@ -7,42 +7,320 @@
     margin: 0 auto;
 }
 
+/* my page */
+.my-page-title {
+    font-size: 28px;
+    font-weight: normal;
+    color: #707070;
+}
+.my-page-content {
+    display: flex;
+}
+.personal-info {
+}
+.apply-list {
+}
+
+/* my page */
+
 /* 신청 페이지 */
 .apply-page-wrapper {
     display: flex;
-    background-color: #f2f2f2;
+    justify-content: space-between;
+    /* background-color: #f2f2f2; */
     padding-top: 200px;
     padding-bottom: 300px;
 }
-.apply-info {
+.apply-info,
+.payment-info {
     width: 550px;
+    font-size: 18px;
+    font-weight: normal;
+    color: #707070;
+}
+.apply-info .title,
+.payment-info .title {
+    font-size: 24px;
+    font-weight: normal;
+    color: #707070;
+    margin-bottom: 10px;
 }
 .apply-info-box + .apply-info-box {
     margin-top: 20px;
 }
 .apply-info-detail {
-    border: 1px solid #707070;
+    border-top: 1px solid #dcdcdc;
     padding: 50px 10px;
 }
+.payment-info-detail {
+    border: 1px solid #dcdcdc;
+    padding: 50px 30px;
+}
+
 .apply-info-detail-item {
     display: flex;
 }
 .payment-info {
-    width: 450px;
     margin-left: 40px;
 }
-.payment-info.apply-info-detail {
-    border: 1px solid #707070;
+.payment-info .purchase-item {
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    padding: 10px;
+    background-color: #f5f5f5;
+    cursor: pointer;
 }
-.apply-info-title {
-    font-size: 20px;
-    margin-bottom: 8px;
+.item-text {
+    margin-left: 20px;
 }
-/* 신청 페이지 */
+.item-text .title {
+    font-size: 18px;
+    font-weight: normal;
+    color: #191919;
+}
+.item-text .date {
+    font-size: 14px;
+    font-weight: 300;
+    color: #707070;
+}
+.payment-info img {
+    width: 130px;
+    height: 130px;
+}
+.payment-info-detail.purchase-detail {
+    border-top: none;
+    padding: 20px 30px;
+    background-color: #f5f5f5;
+}
+.purchase-detail .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price .price-title {
+    font-size: 18px;
+    font-weight: normal;
+    color: #191919;
+}
+.price .total-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #191919;
+}
+.purchase-detail .terms {
+    margin-top: 50px;
+}
+.term-agree {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.term-agree input {
+    margin-right: 10px;
+}
+.term-title {
+    font-size: 14px;
+    font-weight: 300;
+}
+.term-detail {
+    font-size: 12px;
+    font-weight: 300;
+}
 
+/* 신청 페이지 */
+/* 모임 페이지 */
 .moim-page-wrapper {
     padding-top: 10px;
+    /* text-align: center; */
 }
+.moim-page-section {
+    padding-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.title-line {
+    width: 40px;
+    height: 5px;
+    background-color: #002c67;
+}
+#season {
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    #season {
+        display: flex;
+    }
+}
+.season-title {
+    font-weight: bold;
+    font-size: 36px;
+    color: #002c67;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.season-date {
+    font-weight: 500;
+    font-size: 18px;
+    color: #002c67;
+    margin-bottom: 40px;
+}
+.season-img {
+    width: 1200px;
+    height: 400px;
+    background-color: #9a9a9a;
+}
+.section-title {
+    font-weight: bold;
+    font-size: 30px;
+    color: #191919;
+    margin-top: 13.5px;
+    margin-bottom: 22px;
+}
+.section-subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    color: #191919;
+    margin-bottom: 62px;
+}
+.season-moim-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.season-moim-item + .season-moim-item {
+    margin-top: 25px;
+    margin-left: 0;
+}
+.season-moim-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.season-moim-item .subtitle {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #191919;
+    margin-bottom: 9px;
+}
+.season-moim-item .title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #191919;
+    margin-bottom: 35px;
+}
+.season-moim-item .img {
+    border-radius: 15px;
+    background-color: #9a9a9a;
+    width: 100%;
+    height: 300px;
+}
+.season-moim-item .button {
+    background-color: #002c67;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 13px 43px;
+    border-radius: 50px;
+    margin-top: 35px;
+}
+@media screen and (min-width: 768px) {
+    .season-moim-list {
+        flex-direction: row;
+    }
+    .season-moim-item .img {
+        width: 280px;
+        height: 280px;
+    }
+    .season-moim-item + .season-moim-item {
+        margin-top: 0;
+        margin-left: 25px;
+    }
+}
+.event-moim-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
+    text-align: left;
+}
+.event-moim-item {
+    cursor: pointer;
+}
+.event-moim-item .item-wrapper {
+    /* width: 100%; */
+    background: url("/src/tmp_img/cl1.png") no-repeat center;
+    background-size: cover;
+    padding: 25px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.event-moim-item .item-top {
+    display: flex;
+    justify-content: space-between;
+}
+.event-moim-item .item-bottom {
+}
+.event-moim-item .status {
+    display: flex;
+    align-items: center;
+}
+.status-icon {
+    width: 12px;
+    height: 12px;
+    background-color: #464646;
+    border-radius: 6px;
+}
+.status-text {
+    font-weight: normal;
+    font-size: 12px;
+    color: #fff;
+    margin-left: 6px;
+}
+.event-moim-item .date {
+    font-weight: normal;
+    font-size: 12px;
+    color: #fff;
+}
+.event-moim-item .title {
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+}
+.event-moim-item .hashtags {
+    font-weight: normal;
+    font-size: 14px;
+    color: #fff;
+}
+@media screen and (min-width: 768px) {
+    .event-moim-item .item-wrapper {
+        /* width: 300px; */
+    }
+    .event-moim-list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .event-moim-list {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+    }
+}
+/* 모임 페이지 */
 /* 모임 디테일 페이지 */
 .detail-page-wrapper {
     display: flex;

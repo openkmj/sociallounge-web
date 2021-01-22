@@ -1,7 +1,10 @@
 import "./Menu.css";
 import { Link, withRouter } from "react-router-dom";
+import { useUserState } from "../../../modules/Context";
 
 function Menu(props) {
+    const user = useUserState();
+    console.log(user);
     return (
         <div className="sl-header-container">
             <div className="sl-header-wrapper">
@@ -38,9 +41,16 @@ function Menu(props) {
                     </li>
                 </ul>
                 <div className="sl-header-my">
-                    <div>
-                        <Link to="/login">로그인</Link>
-                    </div>
+                    {user.user === "" ? (
+                        <div>
+                            <a href="http://localhost:3000/api/auth/kakao">로그인</a>
+                            {/* <Link to="/login">로그인</Link> */}
+                        </div>
+                    ) : (
+                        <div>
+                            <Link to="/mypage">마이페이지</Link>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

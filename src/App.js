@@ -17,12 +17,20 @@ import Menu from "./components/common/Menu/Menu";
 import MobileMenu from "./components/common/MobileMenu/MobileMenu";
 import Footer from "./components/common/Footer/Footer";
 import MobileFooter from "./components/common/MobileFooter/MobileFooter";
+import { useUserDispatch, useUserState } from "./modules/Context";
 
 function App() {
+    const state = useUserState();
+    const dispatch = useUserDispatch();
     React.useEffect(() => {
         axios
             .get("/auth/name")
             .then((result) => {
+                dispatch({
+                    type: "LOGIN",
+                    id: result.data.data.userKId,
+                    user: result.data.data.userNickname,
+                });
                 console.log(result.data);
             })
             .catch((err) => {
@@ -37,14 +45,14 @@ function App() {
                 <Route path="/" component={MainPage} exact />
                 <Route path="/login" component={LoginPage} />
                 <Route path="/moim" component={MoimPage} />
-                <Route path="/moimdetail" component={MoimDetailPage} />
-                <Route path="/apply" component={ApplyPage} />
+                <Route path="/moimdetail/:moimId" component={MoimDetailPage} />
+                <Route path="/apply/:moimId" component={ApplyPage} />
                 <Route path="/mypage" component={MyPage} />
                 <Route path="/notice" component={NoticePage} />
                 <Route path="/faq" component={FaqPage} />
                 <Route path="/terms" component={TermsPage} />
                 <Route path="/privacy" component={PrivacyPage} />
-                <Redirect path="*" to="/" />
+                {/* <Redirect path="*" to="/" /> */}
             </Switch>
             <Footer />
             <MobileFooter />
